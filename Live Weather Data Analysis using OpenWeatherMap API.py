@@ -41,8 +41,4 @@ plt.title("City-wise Temperature")
 plt.tight_layout()
 plt.show()
 
-plt.figure(figsize=(10, 6))
-sns.barplot(x="City", y="Humidity (%)", data=df, palette="Blues")
-plt.title("City-wise Humidity")
-plt.tight_layout()
-plt.show()
+

@@ -13,3 +13,12 @@ def check_status(url):
         print(f'{url} : Error {emoji.emojize(":thumbs_down:")} - {e.__class__.__name__}: {e}')
 
 # Accepting multiple URLs from user input
+print("Enter multiple URLs separated by commas :")
+input_urls = input("URLs: ").split(',')
+
+# Stripping extra spaces and checking each URL
+urls = [url.strip() for url in input_urls if url.strip() != ""]
+
+print("\n Checking URLs...\n")
+for url in urls:
+    check_status(url)
